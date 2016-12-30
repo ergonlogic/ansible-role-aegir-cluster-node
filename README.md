@@ -16,6 +16,10 @@ Available variables are listed below, along with default values (see `defaults/m
 
 ## Dependencies
 
+Aegir cluster nodes are webservers running Apache or Nginx with php configured.  This role can be configured to install the dependencies.  Other roles can provide these requirements such as:
+
+    geerlingguy.apache
+    geerlingguy.php
 
 ## Example Playbook
 
