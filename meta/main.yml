@@ -1,7 +1,5 @@
 ---
-dependencies:
-  - { role: geerlingguy.php }
-  - { role: geerlingguy.apache }
+dependencies: []
 
 galaxy_info:
   author: ergonlogic

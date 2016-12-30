@@ -1,0 +1,8 @@
+---
+
+- name: Enable Aegir's Nginx config
+  file:
+    state: link
+    path: /etc/nginx/conf.d/aegir.conf
+    src: "{{ aegir_cluster_node_root }}/config/nginx.conf"
+    force: yes  # the target doesn't exist yet

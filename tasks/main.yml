@@ -39,6 +39,10 @@
 - include: setup-apache.yml
   when: aegir_cluster_node_http_service_type == 'apache'
 
+# Ref.: http://community.aegirproject.org/installing/manual/#Nginx_configuration
+- include: setup-nginx.yml
+  when: aegir_cluster_node_http_service_type == 'nginx'
+
 # Ref.: http://community.aegirproject.org/installing/manual#Sudo_configuration
 - name: Configure sudo for aegir user
   copy:
